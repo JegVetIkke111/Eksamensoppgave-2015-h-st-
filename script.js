@@ -40,5 +40,5 @@ function buttonClick() {
 // Button
 let button = document.createElement("button");
 button.innerHTML = "Studieplass?";
-button.onclick = buttonClick();
+button.onclick = buttonClick;
 document.body.appendChild(button);
