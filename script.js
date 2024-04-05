@@ -2,6 +2,8 @@
 let overskrift = document.CreateElement("h1");
 let overskriftInnhold = document.createTextNode("Regn ut om du har nok snitt for å komme inn på ditt studiepoeng");
 document.body.appendChild(overskrift);
+overskrift.appendChild(overskriftInnhold);
+document.body.appendChild(overskrift);
 
 //Lager tre brukerinputt
 let snitt = document.CreateElement("value");
