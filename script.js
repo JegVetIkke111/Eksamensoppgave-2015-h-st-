@@ -6,17 +6,17 @@ overskrift.appendChild(overskriftInnhold);
 document.body.appendChild(overskrift);
 
 //Lager tre brukerinputt
-let snitt = document.createElement("value");
+let snitt = document.createElement("input");
 snitt.setAttribute("style", "50px");
 snitt.setAttribute("min", "0");
 document.body.appendChild(snitt);
 
-let tillegspoeng = document.createElement("value");
+let tillegspoeng = document.createElement("input");
 tillegspoeng.setAttribute("style", "50px");
 tillegspoeng.setAttribute("min", "0");
 document.body.appendChild(tillegspoeng);
 
-let grense = document.createElement("value");
+let grense = document.createElement("input");
 grense.setAttribute("style", "50px");
 grense.setAttribute("min", "0");
 document.body.appendChild(grense);
@@ -27,12 +27,14 @@ let tall2 = tillegspoeng.value;
 let sammenlign = grense.value;
 let brukerpoeng = (snitt * 10) + tillegspoeng;
 
-if brukerpoeng < grense:
-    let resultatMindre.innerHTML = "Du e for dårlig, ha det taper!";
-if else brukerpoeng === grense:
+if (brukerpoeng < grense) {
+    let resultatMindre.innerHTML = "Du e for dårlig, ha det taper!"; 
+} else if (brukerpoeng === grense) {
     let resultatErlik.innerHTML = "Du klarte det akkurat, prøv bedre neste gang ...";
-else brukerpoeng > grense:
+}
+else (brukerpoeng > grense) {
     let resultatStørre.innerHTML = "Ja! Yippie! Wie cool ist das bitte?!";
+}
 
 
 //Button
