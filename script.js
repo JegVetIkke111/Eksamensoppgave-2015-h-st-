@@ -40,7 +40,7 @@ function buttonClick() {
 //Button
 let button = document.CreateElement("button");
 button.innerHTML = "Studieplass?";
-button.onclick = function(){
+button.onclick = buttonClick(){
 
 }
 document.body.appendChild(button);
