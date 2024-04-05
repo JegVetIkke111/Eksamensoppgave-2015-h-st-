@@ -1,6 +1,7 @@
 //Lager overskrift for å informere brukeren 
 let overskrift = document.CreateElement("h1");
-let overskriftInnhold = document.createTextNode("Regn ut om du har nok snitt for å komme inn på ditt studiepoeng")
+let overskriftInnhold = document.createTextNode("Regn ut om du har nok snitt for å komme inn på ditt studiepoeng");
+document.body.appendChild(overskrift);
 
 //Lager tre brukerinputt
 let snitt = document.CreateElement("value");
@@ -36,6 +37,7 @@ else brukerpoeng > grense:
 let button = document.CreateElement("button");
 button.innerHTML = "Studieplass?";
 button.onclick = function(){
+
 }
 document.body.appendChild(button);
 
