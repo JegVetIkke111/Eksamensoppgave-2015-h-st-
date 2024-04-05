@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="no">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eksamensoppgave (2015)</title>
-  </head>
-  <body>
-	  <script src="script.js"></script>
-  </body>
+</head>
+<body>
+<h1>Regn ut om du har nok snitt for å komme inn på ditt studiepoeng</h1>
+
+<label for="tall1">Snitt</label>
+<input type="number" id="snitt">
+
+<label for="tall2">Tilleggspoeng</label>
+<input type="number" id="tillegspoeng">
+
+<label for="sammenlign">Poenggrense</label>
+<input type="number" id="grense">
+
+<button id="calculateBtn">Studieplass?</button>
+
+<p id="resultatStørre"></p>
+<p id="resultatErlik"></p>
+<p id="resultatMindre"></p>
+
+<script src="script.js"></script>
+</body>
 </html>
