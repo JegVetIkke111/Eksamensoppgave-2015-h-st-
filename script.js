@@ -8,13 +8,22 @@ let snitt = document.createElement("input");
 snitt.setAttribute("type", "number");
 document.body.appendChild(snitt);
 
+let snittMarkering = document.createElement("label");
+inner.HTML.snittMarkering = "Snitt";
+
 let tilleggspoeng = document.createElement("input");
 tilleggspoeng.setAttribute("type", "number");
 document.body.appendChild(tilleggspoeng);
 
+let tilleggsMarkering = document.createElement("label");
+inner.HTML.tilleggsMarkering = "Tillegspoeng";
+
 let grense = document.createElement("input");
 grense.setAttribute("type", "number");
 document.body.appendChild(grense);
+
+let grenseMarkering = document.createElement("label");
+inner.HTML.grensetMarkering = "Grense";
 
 function buttonClick() {
     let tall1 = parseFloat(snitt.value);
