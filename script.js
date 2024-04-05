@@ -39,4 +39,3 @@ button.onclick = function(){
 }
 document.body.appendChild(button);
 
-<input style="width:50px" min="0" value="0" type="number" id="antVoks"> 
