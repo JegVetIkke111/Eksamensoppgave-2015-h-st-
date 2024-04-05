@@ -1,5 +1,4 @@
 //Lager tre brukerinputt
-function finnSnitt();
 let snitt = document.CreateElement("Value");
 snitt.setAttribute("style", "50px");
 snitt.setAttribute("min", "0");
