@@ -9,7 +9,15 @@ snitt.setAttribute("style", "50px");
 snitt.setAttribute("min", "0");
 document.body.appendChild(snitt);
 
-let 
+let tillegspoeng = document.CreateElement("value");
+tillegspoeng.setAttribute("style", "50px");
+tillegspoeng.setAttribute("min", "0");
+document.body.appendChild(tillegspoeng);
+
+let grense = document.CreateElement("value");
+grense.setAttribute("style", "50px");
+grense.setAttribute("min", "0");
+document.body.appendChild(grense);
 
 function buttonClick();
 let tall1 = snitt.value;
