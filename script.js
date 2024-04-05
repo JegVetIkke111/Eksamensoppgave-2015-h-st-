@@ -21,21 +21,21 @@ grense.setAttribute("style", "50px");
 grense.setAttribute("min", "0");
 document.body.appendChild(grense);
 
-function buttonClick();
-let tall1 = snitt.value;
-let tall2 = tillegspoeng.value;
-let sammenlign = grense.value;
-let brukerpoeng = (snitt * 10) + tillegspoeng;
+function buttonClick() {
+    let tall1 = snitt.value;
+    let tall2 = tillegspoeng.value;
+    let sammenlign = grense.value;
+    let brukerpoeng = (snitt * 10) + tillegspoeng;
 
-if (brukerpoeng < grense) {
-    let resultatMindre.innerHTML = "Du e for dårlig, ha det taper!"; 
-} else if (brukerpoeng === grense) {
+    if (brukerpoeng < grense) {
+        let resultatMindre.innerHTML = "Du e for dårlig, ha det taper!"; 
+    } else if (brukerpoeng === grense) {
     let resultatErlik.innerHTML = "Du klarte det akkurat, prøv bedre neste gang ...";
+    }
+    else (brukerpoeng > grense) {
+        let resultatStørre.innerHTML = "Ja! Yippie! Wie cool ist das bitte?!";
+    }
 }
-else (brukerpoeng > grense) {
-    let resultatStørre.innerHTML = "Ja! Yippie! Wie cool ist das bitte?!";
-}
-
 
 //Button
 let button = document.CreateElement("button");
