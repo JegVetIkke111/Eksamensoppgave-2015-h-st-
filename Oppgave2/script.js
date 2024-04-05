@@ -12,9 +12,10 @@ let brukerpoeng = (snitt * 10) + tillegspoeng;
 
 if brukerpoeng < grense:
 let resultatMindre.innerHTML = "Du e for dårlig, ha det taper!";
-if else brukerpoeng = grense:
-let resultatErlik.innerHTML = "Du klarte det akkurat, prøv bedre neste gang ..."
-else 
+if else brukerpoeng === grense:
+let resultatErlik.innerHTML = "Du klarte det akkurat, prøv bedre neste gang ...";
+else brukerpoeng > grense:
+let resultatStørre.innerHTML = "Ja! Yippie! Wie cool ist das bitte?!";
 
 
 //Button
