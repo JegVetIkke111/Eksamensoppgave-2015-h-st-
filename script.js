@@ -6,7 +6,6 @@ document.body.appendChild(snitt);
 
 function buttonClick(snitt, tillegspoeng, grense);
 
-
 //Button
 let button = document.CreateElement("button");
 button.innerHTML = "Studieplass?";
