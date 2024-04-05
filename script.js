@@ -7,16 +7,19 @@ document.body.appendChild(overskrift);
 let snitt = document.createElement("input");
 snitt.setAttribute("style", "width: 100px");
 snitt.setAttribute("min", "0");
+snitt.setAttribute("type", "number");
 document.body.appendChild(snitt);
 
 let tilleggspoeng = document.createElement("input");
 tilleggspoeng.setAttribute("style", "width: 50px");
 tilleggspoeng.setAttribute("min", "0");
+tilleggspoeng.setAttribute("type", "number");
 document.body.appendChild(tilleggspoeng);
 
 let grense = document.createElement("input");
 grense.setAttribute("style", "width: 50px");
 grense.setAttribute("min", "0");
+grense.setAttribute("type", "number");
 document.body.appendChild(grense);
 
 function buttonClick() {
