@@ -1,22 +1,22 @@
 //Lager overskrift for å informere brukeren 
-let overskrift = document.CreateElement("h1");
+let overskrift = document.createElement("h1");
 let overskriftInnhold = document.createTextNode("Regn ut om du har nok snitt for å komme inn på ditt studiepoeng");
 document.body.appendChild(overskrift);
 overskrift.appendChild(overskriftInnhold);
 document.body.appendChild(overskrift);
 
 //Lager tre brukerinputt
-let snitt = document.CreateElement("value");
+let snitt = document.createElement("value");
 snitt.setAttribute("style", "50px");
 snitt.setAttribute("min", "0");
 document.body.appendChild(snitt);
 
-let tillegspoeng = document.CreateElement("value");
+let tillegspoeng = document.createElement("value");
 tillegspoeng.setAttribute("style", "50px");
 tillegspoeng.setAttribute("min", "0");
 document.body.appendChild(tillegspoeng);
 
-let grense = document.CreateElement("value");
+let grense = document.createElement("value");
 grense.setAttribute("style", "50px");
 grense.setAttribute("min", "0");
 document.body.appendChild(grense);
