@@ -9,10 +9,10 @@ snitt.setAttribute("style", "width: 100px");
 snitt.setAttribute("min", "0");
 document.body.appendChild(snitt);
 
-let tillegspoeng = document.createElement("input");
-tillegspoeng.setAttribute("style", "width: 50px");
-tillegspoeng.setAttribute("min", "0");
-document.body.appendChild(tillegspoeng);
+let tilleggspoeng = document.createElement("input");
+tilleggspoeng.setAttribute("style", "width: 50px");
+tilleggspoeng.setAttribute("min", "0");
+document.body.appendChild(tilleggspoeng);
 
 let grense = document.createElement("input");
 grense.setAttribute("style", "width: 50px");
@@ -21,7 +21,7 @@ document.body.appendChild(grense);
 
 function buttonClick() {
     let tall1 = parseFloat(snitt.value);
-    let tall2 = parseFloat(tillegspoeng.value);
+    let tall2 = parseFloat(tilleggspoeng.value);
     let sammenlign = parseFloat(grense.value);
     let brukerpoeng = (tall1 * 10) + tall2;
 
@@ -37,5 +37,5 @@ function buttonClick() {
 // Button
 let button = document.createElement("button");
 button.innerHTML = "Studieplass?";
-button.onclick = buttonClick;
+button.onclick = buttonClick();
 document.body.appendChild(button);
