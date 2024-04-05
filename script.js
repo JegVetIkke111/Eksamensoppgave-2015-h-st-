@@ -1,6 +1,6 @@
 // Lager overskrift for å informere brukeren 
 let overskrift = document.createElement("h1");
-overskrift.textContent = "Regn ut om du har nok snitt for å komme inn på ditt studiepoeng";
+overskrift.textContent = "Regn ut om du har nok snitt for å komme inn på ditt studie";
 document.body.appendChild(overskrift);
 
 // Lager tre brukerinputt
