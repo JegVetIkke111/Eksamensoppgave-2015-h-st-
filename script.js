@@ -5,7 +5,7 @@ document.body.appendChild(overskrift);
 
 // Lager tre brukerinputt
 let snitt = document.createElement("input");
-snitt.setAttribute("style", "width: 50px");
+snitt.setAttribute("style", "width: 100px");
 snitt.setAttribute("min", "0");
 document.body.appendChild(snitt);
 
